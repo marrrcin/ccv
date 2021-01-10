@@ -1,7 +1,7 @@
 include config.mk
 
 # CC += -g -fsanitize=address -fno-omit-frame-pointer # -fprofile-arcs -ftest-coverage
-CFLAGS := -O3 -ffast-math -Wall $(CFLAGS)
+CFLAGS := -O3 -fPIC -ffast-math -Wall $(CFLAGS)
 NVFLAGS := -O3 $(NVFLAGS)
 
 .PHONY: all clean
